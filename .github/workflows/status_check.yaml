@@ -24,3 +24,6 @@ jobs:
           fetch-depth: 0
       - name: Super-Linter
         uses: github/super-linter@v4.8.4
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
